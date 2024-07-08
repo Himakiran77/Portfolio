@@ -6,7 +6,7 @@ import Legalapp from "../assets/LegalApp.png";
 import Sockets from "../assets/Sockets.png";
 
 const ProjectsSection = styled.section`
-  padding: 1rem 0;
+  padding: 4rem 0;
 `;
 
 const Container = styled.div`
@@ -190,6 +190,7 @@ const ProjectImage3 = styled.img`
 const ProjectContent = styled.div`
   flex: 1;
   margin-top: 2rem;
+  padding: 20px;
 
   @media (min-width: 768px) {
     margin-left: 2rem;
@@ -204,14 +205,17 @@ const ProjectTitle = styled.h3`
 
   @media (max-width: 425px) {
     font-size: 1.8rem;
+    padding: 19px;
   }
 
   @media (max-width: 375px) {
     font-size: 1.6rem;
+    padding: 17px;
   }
 
   @media (max-width: 325px) {
     font-size: 1.4rem;
+    padding: 15px;
   }
 `;
 
@@ -223,14 +227,17 @@ const ProjectDescription = styled.p`
 
   @media (max-width: 425px) {
     font-size: 1.1rem;
+    padding: 19px;
   }
 
   @media (max-width: 375px) {
     font-size: 1rem;
+    padding: 17px;
   }
 
   @media (max-width: 325px) {
     font-size: 0.9rem;
+    padding: 15px;
   }
 `;
 
@@ -269,7 +276,7 @@ const Projects = () => {
   return (
     <ProjectsSection id="projects">
       <Container>
-        <SectionHeading>
+        <SectionHeading >
           <span className="heading-sec__main">Projects</span>
         </SectionHeading>
         <SubHeading>

@@ -138,20 +138,24 @@ const ContentTitle = styled.h3`
   font-weight: 700;
   font-size: 1.6rem;
   margin-bottom: 3rem;
+  padding: 14px;
 
   @media (max-width: 425px) {
     font-size: 1.4rem;
     margin-bottom: 2.5rem;
+    padding: 12px;
   }
 
   @media (max-width: 375px) {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    padding: 10px;
   }
 
   @media (max-width: 325px) {
     font-size: 1rem;
     margin-bottom: 1.5rem;
+    padding: 8px;
   }
 `;
 
@@ -227,7 +231,7 @@ const SkillsList = styled.ul`
 `;
 
 const SkillItem = styled.li`
-  padding: 1rem 2rem;
+  padding: 1rem 0.8rem;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
   font-size: 1rem;
@@ -239,21 +243,21 @@ const SkillItem = styled.li`
 
   @media (max-width: 425px) {
     font-size: 0.9rem;
-    padding: 0.9rem 1.8rem;
+    padding: 0.9rem 0.8rem;
     margin-bottom: 1.2rem;
     margin-right: 1.2rem;
   }
 
   @media (max-width: 375px) {
     font-size: 0.8rem;
-    padding: 0.8rem 1.6rem;
+    padding: 0.8rem 0.6rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
   }
 
   @media (max-width: 325px) {
     font-size: 0.7rem;
-    padding: 0.7rem 1.4rem;
+    padding: 0.7rem 0.4rem;
     margin-bottom: 0.8rem;
     margin-right: 0.8rem;
   }

@@ -2,11 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import linkedinIcon from '../assets/linkedin-dark.svg';
 import githubIcon from '../assets/github-dark.svg';
+import gmail from "../assets/Gmail.svg";
+import insta from "../assets/Instagram.png";
 
 const FooterContainer = styled.footer`
-  background: black;
-  color: #fff;
-  padding: 3rem 0;
+  // background: black;
+  // color: #fff;
+  color: black;
+  padding: 1rem 0;
   text-align: center;
 `;
 
@@ -24,18 +27,17 @@ const UpperFooter = styled.div`
 
   @media (min-width: 425px) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 `;
 
 const FooterRow = styled.div`
-  &:not(:last-child) {
-    margin-bottom: 2rem;
+   
 
     @media (min-width: 425px) {
       margin-bottom: 0;
     }
-  }
+  
 `;
 
 const FooterHeading = styled.h2`
@@ -66,7 +68,8 @@ const SocialIcon = styled.img`
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1rem;
-  filter: invert(100%);
+  // filter: invert(100%);
+  color: black;
   &:last-child {
     margin-right: 0;
   }
@@ -86,7 +89,8 @@ const LowerFooter = styled.div`
 `;
 
 const FooterLink = styled.a`
-  color: #fff;
+  // color: #fff;
+  color: black;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -101,21 +105,27 @@ const Footer = () => {
       <MainContainer>
         <UpperFooter>
           <FooterRow>
-            <FooterHeading>Mudambi Himakiran</FooterHeading>
+            {/* <FooterHeading>Mudambi Himakiran</FooterHeading>
             <ShortDesc>
               A Frontend focused Web Developer building the Frontend of Websites
               and Web Applications that leads to the success of the overall
               product.
-            </ShortDesc>
+            </ShortDesc> */}
           </FooterRow>
           <FooterRow>
-            <FooterHeading2>Social</FooterHeading2>
+            {/* <FooterHeading2>Social</FooterHeading2> */}
             <SocialContainer>
               <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/mudambi-himakiran">
                 <SocialIcon src={linkedinIcon} alt="Mudambi Himakiran LinkedIn Profile" />
               </a>
               <a target="_blank" rel="noreferrer" href="https://github.com/Himakiran77">
                 <SocialIcon src={githubIcon} alt="Mudambi Himakiran GitHub Profile" />
+              </a>
+              <a target="_blank" rel="noreferrer" href="mailto:himakiranmudambi@gmail.com">
+                <SocialIcon src={gmail} alt="Mudambi Himakiran Gmail" />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/himakiran.21/">
+                <SocialIcon src={insta} alt="Mudambi Himakiran Instagram" />
               </a>
             </SocialContainer>
           </FooterRow>

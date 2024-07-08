@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import commonBg from "./assets/common-bg.svg";
 
 const ContactSection = styled.section`
-  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(${commonBg});
+  // background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(${commonBg});
   padding: 1rem 0;
 `;
 
@@ -30,7 +30,7 @@ const SectionHeading = styled.h2`
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  margin-bottom: 3.5rem;
+  // margin-bottom: 3.5rem;
   position: relative;
   color: #111;
 
@@ -249,7 +249,7 @@ const Contact = () => {
         <SectionHeading>
           <span className="heading-sec__main heading-sec__main--lt">Contact</span>
         </SectionHeading>
-        <SubHeading>
+        {/* <SubHeading>
           Feel free to contact me by submitting the form below and I will get back to you as soon as possible.
         </SubHeading>
         <FormContainer>
@@ -271,7 +271,7 @@ const Contact = () => {
               Submit
             </SubmitButton>
           </Form>
-        </FormContainer>
+        </FormContainer> */}
       </Container>
     </ContactSection>
   );

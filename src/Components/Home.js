@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import linkedinIcon from '../assets/linkedin-dark.svg';
-import githubIcon from '../assets/github-dark.svg';
+// import linkedinIcon from '../assets/linkedin-dark.svg';
+// import githubIcon from '../assets/github-dark.svg';
 import commonBg from '../assets/common-bg.svg';
 
 const AboutSection = styled.section`
@@ -11,6 +11,10 @@ const AboutSection = styled.section`
   height: 100vh;
   max-height: 60rem;
   position: relative;
+
+   @media (max-width: 375px) {
+    height: 50vh;
+  }
 `;
 
 const HomeHeroContent = styled.div`
@@ -259,7 +263,7 @@ const Mouse = styled.div`
 const Home = () => {
   return (
     <AboutSection id="./">
-      <Sidebar>
+      {/* <Sidebar>
         <HomeHeroSocial>
           <a href="https://linkedin.com/in/mudambi-himakiran" target="_blank" rel="noreferrer">
             <img src={linkedinIcon} alt="LinkedIn Icon" style={{ width: '30px', height: '30px' }} />
@@ -270,7 +274,7 @@ const Home = () => {
             <img src={githubIcon} alt="GitHub Icon" style={{ width: '30px', height: '30px' }} />
           </a>
         </HomeHeroSocial>
-      </Sidebar>
+      </Sidebar> */}
       <HomeHeroContent id="./#Home">
         <HeadingPrimary>Hey, I'm Mudambi Himakiran</HeadingPrimary>
         <HomeHeroInfo>

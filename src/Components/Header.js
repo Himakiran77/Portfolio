@@ -189,10 +189,23 @@ const SmallMenu = styled.div`
     visibility: ${props => (props.isOpen ? 'visible' : 'hidden')};
     opacity: ${props => (props.isOpen ? '1' : '0')};
     position: fixed;
-    top: 8%;
     right: 0;
-    width: 25%;
+    width: 100%;
     height: 30%;
+    background-color: white;
+    color: white;
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+   @media (max-width: 375px) {
+    display: block;
+    visibility: ${props => (props.isOpen ? 'visible' : 'hidden')};
+    opacity: ${props => (props.isOpen ? '1' : '0')};
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 20%;
     background-color: white;
     color: white;
     z-index: 999;
