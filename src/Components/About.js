@@ -309,10 +309,10 @@ const About = () => {
             <DetailsWrapper>
               <ContentTitle>Get to know me!</ContentTitle>
               <ContentPara>
-                I'm a <strong>Frontend Focused Web Developer</strong> building and managing the Front-end of Websites and Web Applications that lead to the success of the overall product. Check out some of my work in the <strong>Projects</strong> section.
+                I'm a Focused <strong>Frontend web developer</strong> specializing in building the front-end websites, mobile applications web applications to ensure the success of the overall product. You can explore some of my work in the<strong> Projects </strong> section.
               </ContentPara>
               <ContentPara>
-                I also like sharing content related to the stuff that I have learned over a year in <strong>Web Development</strong> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a rel="noreferrer" href="https://www.linkedin.com/in/mudambi-himakiran" target="_blank">LinkedIn</a>.
+                I enjoy sharing content about my <strong>web development</strong> experiences and knowledge, aiming to assist others in the developer community. Feel free to connect with or follow me on <a rel="noreferrer" href="https://www.linkedin.com/in/mudambi-himakiran" target="_blank">LinkedIn</a>.
               </ContentPara>
               <ContentPara>
                 I'm open to <strong>Job</strong> opportunities where I can contribute, learn, and grow. If you have a good opportunity that matches my skills and experience, then don't hesitate to <strong>contact</strong> me.

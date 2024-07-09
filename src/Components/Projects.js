@@ -90,7 +90,7 @@ const ProjectsContent = styled.div`
   grid-gap: 4rem;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: 425px) {
@@ -146,6 +146,7 @@ const ProjectImage1 = styled.img`
   max-width: 100%;
   height: auto;
   display: block;
+ 
 `;
 
 const ProjectImage2 = styled.img`
@@ -193,7 +194,7 @@ const ProjectContent = styled.div`
   padding: 20px;
 
   @media (min-width: 768px) {
-    margin-left: 2rem;
+    margin-left: 2.8rem;
     margin-top: 0;
   }
 `;
@@ -290,7 +291,8 @@ const Projects = () => {
             <ProjectContent>
               <ProjectTitle>E-Commerce Filtering and Sorting</ProjectTitle>
               <ProjectDescription>
-                Dopefolio is a successful Open-Source project that I created which has been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc. & used by thousands of developers globally
+              Intuitive and visually appealing user interfaces for E-commerce websites.Proficient in creating
+              layouts and interactive elements to enhance user experience and drive conversions.
               </ProjectDescription>
               <CaseStudyLink href="https://himakiran77.github.io/E_commerce_website-react" target="_blank">Case Study</CaseStudyLink>
             </ProjectContent>
@@ -302,7 +304,7 @@ const Projects = () => {
             <ProjectContent>
               <ProjectTitle>Farmroots</ProjectTitle>
               <ProjectDescription>
-                Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
+              Designed a Frontend website named Farmroots. worked on sections such as Products, Certificate, About, Contact and stylings.
               </ProjectDescription>
               <CaseStudyLink href="https://myfarmroots.vercel.app/" target="_blank">Case Study</CaseStudyLink>
             </ProjectContent>
@@ -314,7 +316,7 @@ const Projects = () => {
             <ProjectContent>
               <ProjectTitle>Legal App</ProjectTitle>
               <ProjectDescription>
-                I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.
+              Developing an Android app called Legal App, designed to facilitate interactions between lawyers and their clients for various legal assistance needs.
               </ProjectDescription>
               <CaseStudyLink href="https://github.com/Himakiran77/legal-frontendreactnative-mobileapp" target="_blank">Case Study</CaseStudyLink>
             </ProjectContent>
@@ -324,9 +326,9 @@ const Projects = () => {
               <ProjectImage3 src={Sockets} alt="Software Screenshot" loading="lazy" />
             </ProjectImageContainer>
             <ProjectContent>
-              <ProjectTitle>Sockets iO chat</ProjectTitle>
+              <ProjectTitle>Sockets.iO chat</ProjectTitle>
               <ProjectDescription>
-                Crown is a web template that I created targeting the restaurant and food industry which anyone can use to present their business online.
+                A simple Real-Time UI Chat Application where you send and recieve messages instantly.
               </ProjectDescription>
               <CaseStudyLink href="https://dost-1sjj.onrender.com/" target="_blank">Case Study</CaseStudyLink>
             </ProjectContent>

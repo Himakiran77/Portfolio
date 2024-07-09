@@ -81,7 +81,7 @@ const HomeHeroInfo = styled.div`
 `;
 
 const TextPrimary = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0 auto;
   max-width: 80rem;
   color: #333;
@@ -90,17 +90,17 @@ const TextPrimary = styled.p`
   line-height: 1.6;
 
   @media (max-width: 425px) {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
   }
 
   @media (max-width: 375px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.4;
   }
 
   @media (max-width: 325px) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.3;
   }
 `;
@@ -279,7 +279,7 @@ const Home = () => {
         <HeadingPrimary>Hey, I'm Mudambi Himakiran</HeadingPrimary>
         <HomeHeroInfo>
           <TextPrimary>
-            A Result-Oriented Web Developer building and managing Websites and Web Applications that leads to the success
+            A Result-Oriented Web Developer building Websites, Mobile Applications and Web Applications that leads to the success
             of the overall product.
           </TextPrimary>
         </HomeHeroInfo>
