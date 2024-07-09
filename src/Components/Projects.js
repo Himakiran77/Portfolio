@@ -284,9 +284,21 @@ const Projects = () => {
           Here you will find some of the personal and clients projects that I created with each project containing its own case study
         </SubHeading>
         <ProjectsContent>
+        <ProjectRow>
+            <ProjectImageContainer>
+              <ProjectImage src={Farmroots} alt="Software Screenshot" loading="lazy" />
+            </ProjectImageContainer>
+            <ProjectContent>
+              <ProjectTitle>Farmroots</ProjectTitle>
+              <ProjectDescription>
+              Designed a Frontend website named Farmroots. worked on sections such as Products, Certificate, About, Contact and stylings.
+              </ProjectDescription>
+              <CaseStudyLink href="https://myfarmroots.vercel.app/" target="_blank">Case Study</CaseStudyLink>
+            </ProjectContent>
+          </ProjectRow>
           <ProjectRow>
             <ProjectImageContainer>
-              <ProjectImage src={Ecommerce} alt="Software Screenshot" loading="lazy" />
+              <ProjectImage1 src={Ecommerce} alt="Software Screenshot" loading="lazy" />
             </ProjectImageContainer>
             <ProjectContent>
               <ProjectTitle>E-Commerce Filtering and Sorting</ProjectTitle>
@@ -295,18 +307,6 @@ const Projects = () => {
               layouts and interactive elements to enhance user experience and drive conversions.
               </ProjectDescription>
               <CaseStudyLink href="https://himakiran77.github.io/E_commerce_website-react" target="_blank">Case Study</CaseStudyLink>
-            </ProjectContent>
-          </ProjectRow>
-          <ProjectRow>
-            <ProjectImageContainer>
-              <ProjectImage1 src={Farmroots} alt="Software Screenshot" loading="lazy" />
-            </ProjectImageContainer>
-            <ProjectContent>
-              <ProjectTitle>Farmroots</ProjectTitle>
-              <ProjectDescription>
-              Designed a Frontend website named Farmroots. worked on sections such as Products, Certificate, About, Contact and stylings.
-              </ProjectDescription>
-              <CaseStudyLink href="https://myfarmroots.vercel.app/" target="_blank">Case Study</CaseStudyLink>
             </ProjectContent>
           </ProjectRow>
           <ProjectRow>
