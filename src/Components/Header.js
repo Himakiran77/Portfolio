@@ -256,24 +256,30 @@ const CloseButton = styled.img`
   height: 20px;
   cursor: pointer;
   display: block;
-  margin: 0 auto 10px 370px;
+  margin: 0 auto 10px auto; /* Centered horizontally */
+
+  @media (max-width: 768px) {
+    width: 18px;
+    height: 18px;
+    margin: 10px 15px 10px auto; /* Position to the top-right */
+  }
 
   @media (max-width: 425px) {
     width: 18px;
     height: 18px;
-    margin: 0 auto 10px 320px;
+    margin: 10px 15px 10px auto; /* Position to the top-right */
   }
 
   @media (max-width: 375px) {
     width: 16px;
     height: 16px;
-    margin: 0 auto 10px 170px;
+    margin: 10px 15px 10px auto; /* Position to the top-right */
   }
 
   @media (max-width: 325px) {
     width: 14px;
     height: 14px;
-    margin: 0 auto 10px 290px;
+    margin: 10px 15px 10px auto; /* Position to the top-right */
   }
 `;
 
