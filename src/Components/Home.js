@@ -12,7 +12,7 @@ const AboutSection = styled.section`
   max-height: 60rem;
   position: relative;
 
-  @media (max-width: 375px) {
+   @media (max-width: 375px) {
     height: 50vh;
   }
 `;
@@ -189,67 +189,74 @@ const HomeHeroSocial = styled.div`
 `;
 
 const MouseScrollContainer = styled.div`
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
 
-  @media (max-width: 425px) {
+  @media (min-width: 426px) {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 426px) and (max-width: 425px) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: 426px) and (max-width: 375px) {
     margin-top: 40px;
   }
 
-  @media (max-width: 375px) {
-    margin-top: 30px;
-  }
-
-  @media (max-width: 325px) {
+  @media (min-width: 426px) and (max-width: 325px) {
     margin-top: 20px;
   }
 `;
 
 const Mouse = styled.div`
-  width: 24px;
-  height: 40px;
-  border: 2px solid #282c34;
-  border-radius: 12px;
-  position: relative;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 8px;
-    background-color: #282c34;
-    border-radius: 2px;
-    animation: mouse-scroll 2s infinite;
-  }
+  @media (min-width: 426px) {
+    width: 24px;
+    height: 40px;
+    border: 2px solid #282c34;
+    border-radius: 12px;
+    position: relative;
+    // margin-top: 100px;
 
-  @keyframes mouse-scroll {
-    0% {
-      opacity: 1;
+    &::before {
+      content: '';
+      position: absolute;
       top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 8px;
+      background-color: #282c34;
+      border-radius: 2px;
+      animation: mouse-scroll 2s infinite;
     }
-    100% {
-      opacity: 0;
-      top: 20px;
+
+    @keyframes mouse-scroll {
+      0% {
+        opacity: 1;
+        top: 6px;
+      }
+      100% {
+        opacity: 0;
+        top: 20px;
+      }
     }
-  }
 
-  @media (max-width: 425px) {
-    width: 22px;
-    height: 36px;
-  }
+    @media (max-width: 425px) {
+      width: 22px;
+      height: 36px;
+    }
 
-  @media (max-width: 375px) {
-    width: 20px;
-    height: 32px;
-  }
+    @media (max-width: 375px) {
+      width: 20px;
+      height: 32px;
+    }
 
-  @media (max-width: 325px) {
-    width: 18px;
-    height: 28px;
+    @media (max-width: 325px) {
+      width: 18px;
+      height: 28px;
+    }
   }
 `;
 
