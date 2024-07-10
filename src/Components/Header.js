@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import hamMenu from '../assets/ham-menu.svg';
+import close from '../assets/close.png';
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -250,11 +251,41 @@ const SmallMenuLink = styled.li`
   }
 `;
 
+const CloseButton = styled.img`
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 10px 370px;
+
+  @media (max-width: 425px) {
+    width: 18px;
+    height: 18px;
+    margin: 0 auto 10px 320px;
+  }
+
+  @media (max-width: 375px) {
+    width: 16px;
+    height: 16px;
+    margin: 0 auto 10px 170px;
+  }
+
+  @media (max-width: 325px) {
+    width: 14px;
+    height: 14px;
+    margin: 0 auto 10px 290px;
+  }
+`;
+
 const Header = () => {
   const [isSmallMenuOpen, setIsSmallMenuOpen] = useState(false);
 
   const toggleSmallMenu = () => {
     setIsSmallMenuOpen(!isSmallMenuOpen);
+  };
+
+  const closeSmallMenu = () => {
+    setIsSmallMenuOpen(false);
   };
 
   return (
@@ -289,18 +320,19 @@ const Header = () => {
       </HeaderContent>
       <SmallMenu isOpen={isSmallMenuOpen}>
         <SmallMenuContent>
+          <CloseButton src={close} alt="Close menu" onClick={closeSmallMenu} />
           <SmallMenuLinks>
             <SmallMenuLink>
-              <NavLink href="./">Home</NavLink>
+              <NavLink href="./" onClick={closeSmallMenu}>Home</NavLink>
             </SmallMenuLink>
             <SmallMenuLink>
-              <NavLink href="./#about">About</NavLink>
+              <NavLink href="./#about" onClick={closeSmallMenu}>About</NavLink>
             </SmallMenuLink>
             <SmallMenuLink>
-              <NavLink href="./#projects">Projects</NavLink>
+              <NavLink href="./#projects" onClick={closeSmallMenu}>Projects</NavLink>
             </SmallMenuLink>
             <SmallMenuLink>
-              <NavLink href="./#contact">Contact</NavLink>
+              <NavLink href="./#contact" onClick={closeSmallMenu}>Contact</NavLink>
             </SmallMenuLink>
           </SmallMenuLinks>
         </SmallMenuContent>
@@ -310,4 +342,3 @@ const Header = () => {
 };
 
 export default Header;
-
