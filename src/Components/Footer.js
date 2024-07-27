@@ -61,6 +61,7 @@ const SocialContainer = styled.div`
 
   @media (min-width: 425px) {
     justify-content: flex-end;
+     margin-right: 30px;
   }
 `;
 
