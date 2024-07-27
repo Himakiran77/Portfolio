@@ -124,9 +124,9 @@ const Footer = () => {
               <a target="_blank" rel="noreferrer" href="mailto:himakiranmudambi@gmail.com">
                 <SocialIcon src={gmail} alt="Mudambi Himakiran Gmail" />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/himakiran.21/">
+              {/* <a target="_blank" rel="noreferrer" href="https://www.instagram.com/himakiran.21/">
                 <SocialIcon src={insta} alt="Mudambi Himakiran Instagram" />
-              </a>
+              </a> */}
             </SocialContainer>
           </FooterRow>
         </UpperFooter>
