@@ -273,6 +273,7 @@ const ContactButton = styled.a`
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  margin-right: 1rem;
 
   &:hover {
     background-color: #5f2eea;
@@ -319,6 +320,7 @@ const About = () => {
               </ContentPara>
             </DetailsWrapper>
             <ContactButton href="./#contact">Contact</ContactButton>
+            <ContactButton href="https://drive.google.com/file/d/1pKGouaxhwo3wdM-pvoMR_z76fjNBDbwH/view">Resume</ContactButton>
           </MainContent>
           <SkillsWrapper>
             <SkillsTitle>My Skills</SkillsTitle>
