@@ -122,6 +122,10 @@ const Button = styled.a`
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
   text-decoration: none;
+  
+  &:hover {
+    background-color: #5f2eea;
+  }
 
   @media (max-width: 425px) {
     font-size: 1.1rem;
