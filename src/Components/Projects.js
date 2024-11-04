@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import Ecommerce from "../assets/E-Commerce.png";
 import Farmroots from "../assets/Farmroots.png";
 import Legalapp from "../assets/LegalApp.png";
-import Vocab from '../assets/Vocab.png'
+import Vocab from '../assets/Vocab.png';
+import Expense from '../assets/Expense.jpeg';
 
 const ProjectsSection = styled.section`
   padding: 4rem 0;
@@ -202,6 +203,32 @@ const ProjectImage3 = styled.img`
 }
 `;
 
+const ProjectImage4 = styled.img`
+  max-width: 100%;
+  height: auto;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+
+  @media (min-width: 768px) {
+    max-width: 30%;
+    // left: 320px;
+  }
+
+  @media (min-width: 425px) {
+   max-width: 30%;
+}
+
+  @media (min-width: 375px) {
+    max-width: 30%;
+  }
+   
+  @media (min-width: 320px) {
+    max-width: 30%;
+  }
+`
+
 const ProjectContent = styled.div`
   flex: 1;
   margin-top: 2rem;
@@ -345,6 +372,18 @@ const Projects = () => {
               This vocabulary Building Template ensures an engaging and seamless experience for users through intuitive navigation, interactive learning features, and high-quality design tailored to individuals seeking to enhance their vocabulary skills.
               </ProjectDescription>
               <CaseStudyLink href="https://vocab-bulider.vercel.app/" target="_blank">Case Study</CaseStudyLink>
+            </ProjectContent>
+          </ProjectRow>
+          <ProjectRow>
+            <ProjectImageContainer>
+              <ProjectImage4 src={Expense} alt="Software Screenshot" loading="lazy" />
+            </ProjectImageContainer>
+            <ProjectContent>
+              <ProjectTitle>Expense Reader</ProjectTitle>
+              <ProjectDescription>
+              This app leverages React Native to streamline the process of reading SMS messages on a user’s device, focusing specifically on identifying expense-related data. It extracts and collates details such as the amount, description, and date from relevant messages. This information is then displayed in an organized and easy-to-read format within a single screen or section of the app, providing users with a quick and efficient way to review and manage their expenses.
+              </ProjectDescription>
+              <CaseStudyLink href="https://github.com/Himakiran77/ExpenseReader" target="_blank">Case Study</CaseStudyLink>
             </ProjectContent>
           </ProjectRow>
         </ProjectsContent>
