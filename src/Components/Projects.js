@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Ecommerce from "../assets/E-Commerce.png";
 import Farmroots from "../assets/Farmroots.png";
 import Legalapp from "../assets/LegalApp.png";
-import Sockets from "../assets/Sockets.png";
+import Vocab from '../assets/Vocab.png'
 
 const ProjectsSection = styled.section`
   padding: 4rem 0;
@@ -183,9 +183,23 @@ const ProjectImage3 = styled.img`
   position: relative;
 
   @media (min-width: 768px) {
-    max-width: 140%;
+    max-width: 98%;
     right: 100px;
+    margin-top: 90px;
+    margin-left: 90px;
   }
+  @media (min-width: 425px) {
+   margin-top: 90px;
+   
+}
+    @media (min-width: 375px) {
+    max-width: 88%;
+   margin-top: 90px;
+}
+    @media (min-width: 320px) {
+    max-width: 100%;
+    margin-top: 90px;
+}
 `;
 
 const ProjectContent = styled.div`
@@ -323,14 +337,14 @@ const Projects = () => {
           </ProjectRow>
           <ProjectRow>
             <ProjectImageContainer>
-              <ProjectImage3 src={Sockets} alt="Software Screenshot" loading="lazy" />
+              <ProjectImage3 src={Vocab} alt="Software Screenshot" loading="lazy" />
             </ProjectImageContainer>
             <ProjectContent>
-              <ProjectTitle>Sockets.iO chat</ProjectTitle>
+              <ProjectTitle>Vocab Builder Template</ProjectTitle>
               <ProjectDescription>
-                A simple Real-Time UI Chat Application where you send and recieve messages instantly.
+              This vocabulary Building Template ensures an engaging and seamless experience for users through intuitive navigation, interactive learning features, and high-quality design tailored to individuals seeking to enhance their vocabulary skills.
               </ProjectDescription>
-              <CaseStudyLink href="https://dost-1sjj.onrender.com/" target="_blank">Case Study</CaseStudyLink>
+              <CaseStudyLink href="https://vocab-bulider.vercel.app/" target="_blank">Case Study</CaseStudyLink>
             </ProjectContent>
           </ProjectRow>
         </ProjectsContent>
